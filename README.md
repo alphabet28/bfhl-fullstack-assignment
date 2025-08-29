@@ -1,4 +1,4 @@
-# BFHL Array Processing API
+# BFHL Fullstack Assignment
 
 ## Objective
 This project implements a **REST API** that processes an input array and returns a structured response including:
