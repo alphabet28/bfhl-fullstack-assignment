@@ -1,8 +1,9 @@
-# BFHL Array Processing API
+BFHL Array Processing API
+Objective
 
-## Objective
-This project implements a **REST API** that processes an input array and returns a structured response including:
+This project implements a REST API that processes an input array and returns a structured response including:
 
+<<<<<<< HEAD
 1. Status of operation (`is_success`)
 2. User ID in the format `{full_name_ddmmyyyy}` (full name lowercase)
 3. Email ID
@@ -15,23 +16,55 @@ This project implements a **REST API** that processes an input array and returns
 10. Concatenation of all alphabetical characters in **reverse order with alternating caps**
 
 The API is hosted and available for testing on the `/bfhl` route.
+=======
+Status of operation (is_success)
 
----
+User ID in the format {full_name_ddmmyyyy} (full name lowercase)
+>>>>>>> ba6ec36 (README)
 
+Email ID
+
+<<<<<<< HEAD
 ## Tech Stack
 - Node.js
 - Express.js
 - dotenv (for environment variables)
 - Hosting: [Render](https://render.com)
+=======
+College Roll Number
+>>>>>>> ba6ec36 (README)
 
----
+Array of even numbers (as strings)
 
-## Installation / Setup
+Array of odd numbers (as strings)
 
-1. Clone the repository:
-```bash
+Array of alphabets, converted to uppercase
+
+Array of special characters
+
+Sum of numeric elements (returned as a string)
+
+Concatenation of all alphabetical characters in reverse order with alternating caps
+
+The API is hosted and available for testing on /bfhl route.
+
+Tech Stack
+
+Node.js
+
+Express.js
+
+dotenv (for environment variables)
+
+Hosting: [Railway / Render / Vercel]
+
+Installation / Setup
+
+Clone the repository:
+
 git clone <your_repo_url>
 cd <repo_folder>
+<<<<<<< HEAD
 Install dependencies:
 
 bash
@@ -54,23 +87,60 @@ Copy code
 http://localhost:3000
 API Routes
 GET /verify
+=======
+
+
+Install dependencies:
+
+npm install
+
+
+Create a .env file (optional) to define your PORT:
+
+PORT=3000
+
+
+Start the server locally:
+
+npm run dev
+
+
+The server will run on http://localhost:3000
+
+API Routes
+GET /verify
+
+>>>>>>> ba6ec36 (README)
 Purpose: Health check / verification
 
 Response:
 
+<<<<<<< HEAD
 json
 Copy code
+=======
+>>>>>>> ba6ec36 (README)
 {
   "is_success": true,
   "message": "API is running successfully",
   "timestamp": "2025-08-29T05:00:00.000Z"
 }
+<<<<<<< HEAD
 POST /bfhl
 Purpose: Process input array and return structured response
 
 Request Body:
 json
 Copy code
+=======
+
+POST /bfhl
+
+Purpose: Process input array and return structured response
+
+Request Body:
+
+>>>>>>> ba6ec36 (README)
 {
   "full_name": "John Doe",
   "dob": "17091999",
@@ -78,9 +148,16 @@ Copy code
   "roll_number": "ABCD123",
   "data": ["a","1","334","4","R","$"]
 }
+<<<<<<< HEAD
 Response Example (Example A):
 json
 Copy code
+=======
+
+
+Response Example (Example A):
+
+>>>>>>> ba6ec36 (README)
 {
   "is_success": true,
   "user_id": "john_doe_17091999",
@@ -93,6 +170,11 @@ Copy code
   "sum": "339",
   "concat_string": "Ra"
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ba6ec36 (README)
 Notes:
 
 All numbers are returned as strings.
@@ -105,6 +187,7 @@ Any non-alphanumeric characters are returned in special_characters.
 
 Example Requests & Responses
 Example B
+<<<<<<< HEAD
 Request:
 
 json
@@ -116,6 +199,18 @@ Response:
 
 json
 Copy code
+=======
+
+Request:
+
+{
+  "data": ["2","a","y","4","&","-","*","5","92","b"]
+}
+
+
+Response:
+
+>>>>>>> ba6ec36 (README)
 {
   "is_success": true,
   "user_id": "john_doe_17091999",
@@ -128,6 +223,7 @@ Copy code
   "sum": "103",
   "concat_string": "ByA"
 }
+<<<<<<< HEAD
 Example C
 Request:
 
@@ -140,6 +236,20 @@ Response:
 
 json
 Copy code
+=======
+
+Example C
+
+Request:
+
+{
+  "data": ["A","ABcD","DOE"]
+}
+
+
+Response:
+
+>>>>>>> ba6ec36 (README)
 {
   "is_success": true,
   "user_id": "john_doe_17091999",
@@ -152,6 +262,7 @@ Copy code
   "sum": "0",
   "concat_string": "EoDdCbAa"
 }
+<<<<<<< HEAD
 Hosted API
 Method: POST
 
@@ -164,3 +275,14 @@ Render Hosted URL:
 arduino
 Copy code
 https://your-bfhl-api.onrender.com/bfhl
+=======
+
+Deployment
+
+Hosted API endpoint (example):
+
+https://your-hosted-url.com/bfhl
+
+
+Use this URL for form submission or testing.
+>>>>>>> ba6ec36 (README)
