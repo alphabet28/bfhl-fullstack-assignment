@@ -3,7 +3,7 @@ Objective
 
 This project implements a REST API that processes an input array and returns a structured response including:
 
-<<<<<<< HEAD
+
 1. Status of operation (`is_success`)
 2. User ID in the format `{full_name_ddmmyyyy}` (full name lowercase)
 3. Email ID
